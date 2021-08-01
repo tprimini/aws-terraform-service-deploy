@@ -1,0 +1,19 @@
+[
+    {
+        "name": "${container_name}",
+        "image": "${service_image}",
+        "portMappings": [
+            { "protocol": "tcp", "containerPort": 8443 }
+        ],
+        "essential": true,
+        "environment": [],
+        "logConfiguration": {
+            "logDriver": "awslogs",
+            "options": {
+                "awslogs-group" : "${environment}-${region}-${ecs_service_name}",
+                "awslogs-region" : "${region}",
+                "awslogs-stream-prefix" : "${ecs_service_name}"
+            }
+        }
+    }
+]
