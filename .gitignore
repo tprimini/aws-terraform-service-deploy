@@ -1,0 +1,12 @@
+.idea/
+.env
+infra/.idea
+infra/dev/.terraform/
+infra/dev/terraform.tfstate*
+infra/dev/.terraform*
+service/infra/terraform/dev/.terraform/
+service/infra/terraform/dev/terraform.tfstate*
+service/infra/terraform/dev/.terraform*
+service/node_modules/
+.vscode/
+
