@@ -6,7 +6,7 @@ const app = express();
 
 app.get('/simple-api/v1/test', (req, res) => {
     console.log('test from v1 endpoint A');
-    res.json({ response: 'test from v1 endpoint B' })
+    res.json({ response: 'test from v1 endpoint A' })
     res.status(200).end();
 });
 

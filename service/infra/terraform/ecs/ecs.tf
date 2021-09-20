@@ -3,7 +3,7 @@ data "template_file" "task-def" {
 
     vars = {
         container_name   = var.container_name
-        service_image    = "${data.aws_ecr_repository.service.repository_url}:simple-api"
+        service_image    = "${data.aws_ecr_repository.service.repository_url}:simple-api-1"
         region           = var.region
         environment      = var.environment
         ecs_service_name = var.ecs_service_name

@@ -20,7 +20,7 @@ variable "remote_state_key" {
 
 variable "remote_state_bucket" {
     type = string
-    default = "dev-org-001-infra-tf-state"
+    default = "devweek-infra-tf-state"
 }
 
 variable "container_name" {
