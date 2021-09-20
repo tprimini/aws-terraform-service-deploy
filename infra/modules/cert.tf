@@ -33,5 +33,5 @@ resource "aws_route53_record" "cert-valid-record" {
 
 resource "aws_acm_certificate_validation" "default" {
   certificate_arn         = aws_acm_certificate.domain.arn
-  validation_record_fqdns = [for record in aws_route53_record.cert-valid-record : record.fqdn]
+  validation_record_fqdns = [for record in aws_route53_record.cert-valid-record : record.fqdn] // list of FQDNs
 }
